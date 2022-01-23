@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(133, 156, 156);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*table admin*/
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  padding: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 20px;
+}
+/*Admin Screen*/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.admin {
+  margin-left: 30px;
+}
+
+.add {
+  margin-right: 30px;
+}
+/*stats page*/
+
+.top {
+  display: flex;
+  justify-content: space-around;
+}
+.ul-sell {
+  flex-direction: column;
+  line-height: 5rem;
+  font-weight: bold;
+  list-style: none;
+}
+.ul-sell2 {
+  flex-direction: column;
+  line-height: 5rem;
+  font-weight: bold;
+  list-style: none;
+}
+.ul-sell3 {
+  flex-direction: column;
+  line-height: 5rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+.li {
+  box-sizing: border-box;
+  border: solid 1px black;
+  padding: 50px;
 }
